@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+    :root {
+        --bg-color: #000000;
+        --text-color: #FFF;
+        --main-color: #ff0000;
+        --star-color: #ffbb00;
+        --text-color2: #505050;
+    }
+
+/* -------------------------------------------
+Reset de margens e padding para html e body
+------------------------------------------- */
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: visible; /* Previne barras de rolagem horizontais */
+    }
+
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+/* -------------------------------------------
+    Estilos para o Botão WhatsApp
+------------------------------------------- */
+
+    .bottomwhatsappmsg {
+        color: rgb(255, 255, 255);
+        box-sizing: border-box;
+        padding: 5px;
+        background: #000000;
+        position: fixed;
+        bottom: 73px;
+        right: 20px;
+        border-radius: 50px;
+        text-align: center;
+        z-index: 999;
+        font-size: 13px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1.2s ease;
+    }
+
+    .bottomwhatsapp {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 10px;
+        right: 20px;
+        border-radius: 50px;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .bottomwhatsapp:hover .bottomwhatsappmsg {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .bottomwhatsapplogo {
+        width: 60px;
+        height: 60px;
+    }
+
+/* -------------------------------------------
+Estilos para a Informação de Copy
+------------------------------------------- */
+
+    .infobottom {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        margin: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+/* -------------------------------------------
+Estilos para os Botões Sociais
+------------------------------------------- */
+
+    .sociais-icologo1, .sociais-icologo2 {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .sociais-icologo1 {
+        margin-left: 53%;
+    }
+
+    .sociais-icologo2 {
+        margin-left: 47%;
+    }
+
+/* -------------------------------------------
+Estilos para a Barra de Cookies
+------------------------------------------- */
+
+    .cookie-banner {
+        position: fixed;
+        bottom: 15px;
+        left: 40px;
+        right: 850px;
+        width: 350px;
+        min-height: 20px;
+        background-color: #333;
+        color: #fff;
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        opacity: 0;  /* Inicialmente invisível */
+        visibility: hidden;  /* Inicialmente oculto */
+        transition: opacity 0.9s ease, visibility 0s linear 0.9s;  /* Animação de fade-in e fade-out */
+        z-index: 1000;
+    }
+
+    .cookie-banner button {
+        background-color: #000000;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .cookie-banner button:hover {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .cookiePolitica {
+        color: var(--main-color);
+    }
+
+/* -------------------------------------------
+Estilo Geral do Footer
+------------------------------------------- */
+
+footer {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container que agrupa todas as seções */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Seções individuais dentro do footer */
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: var(--bg-color);
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção de redes sociais */
+.footer-section.social-media {
+    text-align: center;
+}
+
+.footer-section.social-media a {
+    margin: 0 10px;
+}
+
+.footer-section.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilo para o rodapé inferior */
+.footer-bottom {
+    background-color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+    .webdev {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .webdev-png {
+
+        display: flex;
+        width: 17%;
+
+    }

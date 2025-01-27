@@ -1,0 +1,291 @@
+
+:root {
+    --bg-color: #000000;
+    --text-color: #FFF;
+    --main-color: #ff0000;
+    --star-color: #ffbb00;
+    --text-color2: #505050;
+}
+
+
+/*! ------------------------------------------- */
+/*! Estilos para o Seletor de Categorias        */
+/*! ------------------------------------------- */ 
+
+.seletorcategorias1 {
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    margin: 100px auto 50px;
+
+}
+
+/*! ------------------------------------------- */
+/*! Estilos para o Mostruario de Produtos       */
+/*! ------------------------------------------- */ 
+
+    /*? DIV GERAL */
+    .produtos { 
+        display: flex;  /* Utiliza Flexbox para o layout */
+        flex-wrap: nowrap;  /* Não permite que os itens quebrem para a linha seguinte */
+        justify-content: space-evenly;  /* Distribui os itens com espaçamento igual entre eles */
+    }
+    .produto a {
+        text-decoration: none;
+        color: var(--bg-color);
+    }
+    /*? SEGUNDA DIV GERAL */
+    .produto { 
+        margin: 10px;  /* Espaçamento ao redor de cada item */
+        width: 200px;  /* Largura fixa para cada produto */
+        text-align: center;  /* Centraliza o texto dentro de cada item */
+        display: block;  /* Faz cada produto se comportar como um bloco */
+        border: 1px solid var(--text-color);  /* Define uma borda com cor variável */
+        border-radius: 5px;  /* Bordas arredondadas */
+        padding: 10px;  /*w Preenche o conteúdo com 10px de espaçamento */
+        transition: box-shadow 1s ease;  /* Transição suave para a sombra */
+    }
+
+    /*? HOVER DA SEGUNDA DIV GERAL */
+    .produto:hover { 
+        transition: box-shadow 1s ease;  /* Transição suave para a sombra */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);  /* Aplica uma sombra ao redor do produto */
+        color: var(--bg-color);  /* Altera a cor do texto ao passar o mouse */
+    }
+
+    /*? IMAGEM DO PRODUTO */
+    .produto img { 
+        max-width: 100%;  /* A imagem não ultrapassa a largura do seu contêiner */
+        height: auto;  /* Mantém a proporção da imagem */
+        border-radius: 5px;  /* Bordas arredondadas para a imagem */
+        transition: all .50s ease;  /* Transição suave para todas as propriedades */
+    }
+
+    /*? TITULO DO PRODUTO */
+    .produto h3 {            
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Define a família de fontes */
+        font-size: 20px;  /* Define o tamanho da fonte */
+        margin-top: 10px;  /* Espaçamento acima do título */
+        font-weight: 400;  /* Largura da fonte normal */
+    }
+
+    /*? MARCA DO PRODUTO */
+    .produto span {
+        font-size: 15px;  /* Tamanho da fonte */
+        font-family: "Overlock", serif;  /* Família de fontes serifada */
+        font-weight: 600;  /* Largura da fonte */
+        font-style: normal;  /* Estilo normal para a fonte */
+        color: var(--text-color2);  /* Cor do texto */
+    }
+
+    /*? 6X NO CARTÃO */
+    .produto .span-cartao {
+        text-align: center;  /* Centraliza o texto */
+        width: 100%;  /* Ocupa toda a largura disponível */
+        font-size: 13px;  /* Tamanho de fonte menor */
+        margin-bottom: 30px;  /* Espaço abaixo do texto */
+    }
+
+    /*? DIV DO PREÇO/DESCONTO */
+    .produto .p-div {
+        display: flex;  /* Utiliza Flexbox para alinhar os itens */
+        align-items: center;  /* Alinha verticalmente os itens */
+        justify-content: space-evenly;  /* Distribui os itens com espaçamento uniforme */
+    }
+
+    /*? PREÇO DO PRODUTO */
+    .produto .p-preço {
+        font-weight: bold;  /* Deixa o preço em negrito */
+        color: var(--bg-color);  /* Cor do preço */
+        margin: 0;  /* Remove margens */
+        padding: 0;  /* Remove padding */
+    }
+
+    /*? DESCONTO DO PRODUTO */
+    .produto .p-desconto {
+        font-weight: 500;  /* Largura médio da fonte */
+        font-size: 12px;  /* Tamanho da fonte menor */
+        text-decoration: line-through;  /* Aplica o riscado no texto */
+        margin: 0;  /* Remove margens */
+        padding: 0;  /* Remove padding */
+        border-radius: 5px;
+        border: 3px solid var(--bg-color);
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    /*? HOVER IMAGEM DO PRODUTO */
+    .produto img:hover {
+        transform: scale(1.050);  /* Aumenta a imagem em 5% ao passar o mouse */
+        transition: all .50s ease;  /* Transição suave para o efeito de aumento */
+    }
+
+    .p-offer {
+        border: 3px solid var(--bg-color);
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        border-radius: 5px;
+        
+    }
+    .p-sale {
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+/*! ------------------------------------------------------------------------------------------- */
+/*! Estilos para o Rodapé (Informações sobre Troca, Frete, Informações e Parcelamento)          */
+/*! ------------------------------------------------------------------------------------------- */
+
+   .footer-infos {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.ftxt-atendimento1, .ftxt-trocas1, .ftxt-frete1, .ftxt-parcelamento1 {
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fico-atendimento2,.ftxt-trocas2,.ftxt-frete2,.ftxt-parcelamento2 {
+    display: flex;
+    text-align: center;
+    font-weight: italic;
+}
+
+.ver-produtos {
+    margin-top: 40px;
+}
+
+.corpo-categorias {
+    max-width: 1080px;
+    margin: auto;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.ver-produtos .col-2 img{
+    width: 100%;
+
+}
+.ver-produtos #produtoImg {
+    width: 70%;
+
+}
+.ver-produtos .col-2 {
+    padding: 10px;
+    
+}
+.linha {
+    display: flex; /* Ativa o layout flex */
+    justify-content: space-between; /* Distribui o espaço igualmente entre os elementos filhos, alinhando-os à esquerda e à direita */
+}
+
+.col-2 {
+    flex: 1; /* Define que essa coluna pode ocupar o mesmo espaço disponível */
+
+}
+
+.col-2 .coltext {
+    flex: 2; /* A segunda coluna ocupará mais espaço (ajuste conforme necessário) */
+}
+
+.ver-produtos h4 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--bg-color);
+    
+}
+.ver-produtos select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid var(--bg-color);
+
+}
+.ver-produtos select:focus {
+    outline: none;
+}
+.ver-produtos input {
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    border: 1px solid var(--bg-color);
+    
+}
+.ver-produtos input:focus {
+    outline: none;
+}
+
+.ver-produtos .btn {
+    border: none;
+    background-color: var(--main-color);
+    height: 42px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.ver-produtos .btn:hover {
+    background-color: var(--bg-color);
+} 
+.ver-produtos p{
+    font-size: 13px;
+
+}
+
+.produtosclass {
+    color: var(--star-color);
+}
+
+.img-linha {
+    display: flexbox;
+    flex-direction: row;
+
+
+}
+.img-col {
+    display: inline-flex;
+    flex-basis: 24%;
+    cursor: pointer;
+    width: 100px; /* Tamanho pequeno da imagem */
+    margin-bottom: 10px; /* Espaçamento entre as imagens */
+
+
+}
+
+.img-principal {
+    display: flex;
+
+}
+
+.produtosclass {
+    color: var(--star-color);
+}
+.produtosclass-span {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--bg-color);
+
+}
+
+.produtosclass-a {
+    text-decoration: none;  /* Remove o sublinhado */
+    color: var(--bg-color);
+}
+
+
+
+
+
+
+
+
+

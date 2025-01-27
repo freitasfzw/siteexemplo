@@ -1,0 +1,307 @@
+/*! ------------------------ */
+/*! Estilo Root Inicial      */
+/*! ------------------------ */
+
+:root {
+    --bg-color: #000000;
+    --text-color: #FFF;
+    --main-color: #ff0000;
+    --star-color: #ffbb00;
+    --text-color2: #505050;
+}
+
+/*! ------------------------ */
+/*! Estilo banner Incial     */
+/*! ------------------------ */
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+    .carousel-slide {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-item {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        .carousel-container {
+            max-width: 100%;
+        }
+    }
+
+/*! ---------------------------- */
+/*! Estilo Barra de Pesquisa     */
+/*! ---------------------------- */
+
+    .divbarra-pesquisa {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .divbarra-pesquisa .barra-pesquisa{
+        margin: 20px;
+        padding: 10px;
+        font-size: 16px;
+        width: 300px;
+        border-radius: 5px;
+        border: 1px solid var(--bg-color);
+    }
+
+/*! -------------------------------- */
+/*! Estilo Seletor de Categorias     */
+/*! -------------------------------- */
+
+    .seletorcategorias1 {
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        margin: 100px auto 50px;
+
+    }
+
+    .seletorcategorias1 select {
+        padding: 5px;
+        border: 1px solid var(--bg-color);
+    }
+    .seletorcategorias1 select:focus {
+        outline: none;
+    }
+
+/*! ---------------------------- */
+/*! Estilo Paginação             */
+/*! ---------------------------- */
+    .paginacao {
+        margin: 0 auto 80px;
+    }
+    .paginacao span{
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        border: 1px solid var(--bg-color);
+        text-align: center;
+        line-height: 40px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .paginacao span:hover {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+}
+/*! ----------------------------------- */
+/*! Estilo para Ultimos Lançamentos     */
+/*! ----------------------------------- */
+
+    .produtos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+    .produto a {
+        text-decoration: none;
+        color: var(--bg-color);
+    }
+    /*? SEGUNDA DIV GERAL */
+    .produto { 
+        margin: 10px;  /* Espaçamento ao redor de cada item */
+        width: 200px;  /* Largura fixa para cada produto */
+        text-align: center;  /* Centraliza o texto dentro de cada item */
+        display: block;  /* Faz cada produto se comportar como um bloco */
+        border: 1px solid var(--text-color);  /* Define uma borda com cor variável */
+        border-radius: 5px;  /* Bordas arredondadas */
+        padding: 10px;  /*w Preenche o conteúdo com 10px de espaçamento */
+        transition: box-shadow 1s ease;  /* Transição suave para a sombra */
+    }
+
+    /*? HOVER DA SEGUNDA DIV GERAL */
+    .produto:hover { 
+        transition: box-shadow 1s ease;  /* Transição suave para a sombra */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);  /* Aplica uma sombra ao redor do produto */
+        color: var(--bg-color);  /* Altera a cor do texto ao passar o mouse */
+    }
+
+    /*? IMAGEM DO PRODUTO */
+    .produto img { 
+        max-width: 100%;  /* A imagem não ultrapassa a largura do seu contêiner */
+        height: auto;  /* Mantém a proporção da imagem */
+        border-radius: 5px;  /* Bordas arredondadas para a imagem */
+        transition: all .50s ease;  /* Transição suave para todas as propriedades */
+    }
+
+    /*? TITULO DO PRODUTO */
+    .produto h3 {            
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Define a família de fontes */
+        font-size: 20px;  /* Define o tamanho da fonte */
+        margin-top: 10px;  /* Espaçamento acima do título */
+        font-weight: 400;  /* Largura da fonte normal */
+    }
+
+    /*? MARCA DO PRODUTO */
+    .produto span {
+        font-size: 15px;  /* Tamanho da fonte */
+        font-family: "Overlock", serif;  /* Família de fontes serifada */
+        font-weight: 600;  /* Largura da fonte */
+        font-style: normal;  /* Estilo normal para a fonte */
+        color: var(--text-color2);  /* Cor do texto */
+    }
+
+    /*? 6X NO CARTÃO */
+    .produto .span-cartao {
+        text-align: center;  /* Centraliza o texto */
+        width: 100%;  /* Ocupa toda a largura disponível */
+        font-size: 13px;  /* Tamanho de fonte menor */
+        margin-bottom: 30px;  /* Espaço abaixo do texto */
+    }
+
+    /*? DIV DO PREÇO/DESCONTO */
+    .produto .p-div {
+        display: flex;  /* Utiliza Flexbox para alinhar os itens */
+        align-items: center;  /* Alinha verticalmente os itens */
+        justify-content: space-evenly;  /* Distribui os itens com espaçamento uniforme */
+    }
+
+    /*? PREÇO DO PRODUTO */
+    .produto .p-preço {
+        font-weight: bold;  /* Deixa o preço em negrito */
+        color: var(--bg-color);  /* Cor do preço */
+        margin: 0;  /* Remove margens */
+        padding: 0;  /* Remove padding */
+    }
+
+    /*? DESCONTO DO PRODUTO */
+    .produto .p-desconto {
+        font-weight: 500;  /* Largura médio da fonte */
+        font-size: 12px;  /* Tamanho da fonte menor */
+        text-decoration: line-through;  /* Aplica o riscado no texto */
+        margin: 0;  /* Remove margens */
+        padding: 0;  /* Remove padding */
+        border-radius: 5px;
+        border: 3px solid var(--bg-color);
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    /*? HOVER IMAGEM DO PRODUTO */
+    .produto img:hover {
+        transform: scale(1.050);  /* Aumenta a imagem em 5% ao passar o mouse */
+        transition: all .50s ease;  /* Transição suave para o efeito de aumento */
+    }
+
+    .p-offer {
+        border: 3px solid var(--bg-color);
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        border-radius: 5px;
+        
+    }
+    .p-sale {
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .button-vermais {
+        display: flex;
+        margin: auto;
+        background-color: var(--bg-color);
+        font-size: 18px;
+        color: var(--text-color);
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: all .50s ease;
+    }
+
+    .button-vermais:hover {
+        color: var(--main-color);
+        cursor: pointer;
+        transition: all .50s ease;
+        transform: scale(1.2);
+    }
+
+/*! --------------------------------------------------------------------------------------- */
+/*! Estilos para o Rodapé (Informações sobre Troca, Frete, Informações e Parcelamento)      */
+/*! --------------------------------------------------------------------------------------- */
+
+    .footer-infos {
+        display: inline-flex;
+        justify-content: space-evenly;
+        width: 100%;
+        font-size: 16px;
+        margin: 0px 7px;
+
+    }
+    .fico-atendimento,
+    .fico-trocas,
+    .fico-frete,
+    .fico-parcelamento {
+        display: flex;
+        align-items: center; /* Alinha os itens verticalmente no centro */
+        justify-content: center; /* Alinha os itens horizontalmente no centro */
+        gap: 10px; /* Espaçamento entre os itens (ícone e texto) */
+
+    }
+
+    .fico-atendimento1,
+    .fico-trocas1,
+    .fico-frete1,
+    .fico-parcelamento1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ftxt-atendimento,
+    .ftxt-trocas,
+    .ftxt-frete,
+    .ftxt-parcelamento {
+        display: flex;
+        flex-direction: column; /* Coloca o texto em coluna */
+        justify-content: center;
+
+    }
+
+    .ftxt-atendimento1,
+    .ftxt-trocas1,
+    .ftxt-frete1,
+    .ftxt-parcelamento1 {
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .ftxt-atendimento2,
+    .ftxt-trocas2,
+    .ftxt-frete2,
+    .ftxt-parcelamento2 {
+        font-size: 0.9rem;
+        color: #666; /* Cor mais clara para a descrição */
+    }
+
+    
+/*! ---------------------------- */
+/*! Estilos para Home>Pagina     */
+/*! ---------------------------- */
+
+    .home-pagina {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 5px;
+
+    }
+    .home-pagina a{
+  
+        color: var(--bg-color);
+        
+    }

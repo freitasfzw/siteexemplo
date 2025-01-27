@@ -1,0 +1,179 @@
+/* -------------------------------------------
+Estilos para o Menu
+------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+
+}
+
+:root {
+    --bg-color: #000000;
+    --text-color: #FFF;
+    --main-color: #ff0000;
+    --star-color: #ffbb00;
+    --text-color2: #505050;
+}
+
+
+.header-nav {
+    position: relative;
+    width: 100%;
+    transition: all .50s ease;
+    z-index: 1000;
+    background-color: #000000;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    transition: all .5s ease;
+
+}
+.nav-imagem {
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 15%;
+
+}
+.nav-logo {
+    display: inline-block;
+    width: 90%;
+    height: auto;
+
+}
+.nav-list,.nav-carrinho {
+    display: flex;
+    border: none;
+    padding: 10px 15px;
+}
+.nav-list ul,.nav-carrinho ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+.nav-item,.nav-carrinho-item {
+    margin: 0 12px;
+    transition: all .50s ease;
+
+}
+.nav-item a:hover,.nav-carrinho a:hover {
+    display: flex;
+    border: none;
+    border-radius: 20px;
+    transition: all .50s ease;
+    color: var(--main-color);
+
+}
+.nav-link,.nav-carrinho-item {
+    color: var(--text-color);
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.0rem;
+    transition: all .50s ease;
+    gap: 5px;
+
+}
+.login-button button {
+    display: flex;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer; 
+}
+.login-button button:hover {
+    color: var(--main-color);
+
+}
+.login-button button .login-button1 {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.0rem;
+
+}
+.login-button button .login-button1:hover {
+    transition: all .50s ease;
+
+}
+.login-button button .login-svg {
+    display: flex;
+
+}
+.mobile-menu-icon {
+    display: none;
+
+}
+.mobile-menu {
+    display: none;
+    transition: all .50s ease;
+
+}
+@media screen and (max-width: 600px) {
+    .header {
+        transition: .2s;
+
+    }
+    .nav-bar {
+        padding: 1.5rem 4rem;
+        transition: all .50s ease;
+    }
+    .nav-item {
+        display: none;
+        transition: all .50s ease;
+    }
+    .nav-item a {
+        transition: all .50s ease;
+    }
+    .nav-item a:hover {
+        transform: translateY(5px);
+    }
+    .login-button {
+        display: none;
+    }
+    .nav-imagem {
+        justify-content: space-between;
+    }
+
+    .nav-logo {
+        width: 200%;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+       cursor: pointer; 
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}

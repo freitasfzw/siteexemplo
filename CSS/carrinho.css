@@ -1,0 +1,164 @@
+:root {
+    --bg-color: #000000;
+    --text-color: #FFF;
+    --main-color: #ff0000;
+    --star-color: #ffbb00;
+    --text-color2: #505050;
+}
+
+
+/* -------------------------------------------
+   Estilos para o Rodapé (Informações sobre Troca, Frete, Informações e Parcelamento)
+   ------------------------------------------- */
+
+   .footer-infos {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.ftxt-atendimento1, .ftxt-trocas1, .ftxt-frete1, .ftxt-parcelamento1 {
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fico-atendimento2,.ftxt-trocas2,.ftxt-frete2,.ftxt-parcelamento2 {
+    display: flex;
+    text-align: center;
+    font-weight: italic;
+}
+
+/* -------------------------------------------
+   Estilos para as informações da Loja Física (Informações localização, fotos e telefone)
+   ------------------------------------------- */
+
+.lojaPresencial-txt1 {
+    display: inline-block;
+    justify-content: space-between;
+    margin: 0px 150px;
+    text-align: left;
+}
+
+.lojaMaps {
+    margin: 0px -60px;
+    text-align: left;
+
+}
+
+.lojaMaps1  {
+    color: var(--bg-color); 
+}
+
+.lojaMaps1:hover  {
+    color: var(--main-color); 
+
+}
+
+.lojaPesencial {
+    background-color: var(--text-color);
+}
+
+.lojaPresencial-img {
+    align-items: left;
+    justify-content: left;
+}
+
+.lojaPresencial-img1 {
+    box-shadow: -5px -5px 5px rgb(185, 185, 185);
+    position: absolute;
+    width: 23%;
+    height: auto;
+    right: 0%;
+    bottom: -151%;
+
+}
+
+.lojaPresencial-img2 {
+    box-shadow: -5px -5px 5px rgb(185, 185, 185);
+    position: absolute;
+    width: 23%;
+    height: auto;
+    right: 25%;
+    bottom: -151%;
+
+}
+
+:root {
+    --bg-color: #000000;
+    --text-color: #FFF;
+    --main-color: #ff0000;
+
+  }
+
+.carrinho-compras {
+    margin: 80px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-carrinho {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    text-align: left;
+    font-weight: normal;
+    padding: 5px;
+}
+
+td {
+    padding: 10px 5px;
+
+}
+
+td input {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+td a{
+    color: var(--main-color);
+    font-size: 12px;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.valor-total {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.valor-total table {
+    border-top: 3px solid var(--bg-color);
+    width: 100%;
+    max-width: 420px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+@media only screen and (max-width:800px){
+    .info-carrinho p {
+        display: none;
+    }
+}
