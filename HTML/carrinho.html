@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!--Icone da Pagina.-->
     <link rel="shortcut icon" href="../IMG/use-styloo-ico.ico" type="image/x-icon">
+
 <!--CSS da Página.-->
     <link rel="stylesheet" href="../CSS/carrinho.css">
     <link rel="stylesheet" href="../CSS/menuparado.css">
@@ -16,307 +18,348 @@
 <body>
 
 <!--Menu da Página-->
-<header class="header-nav">
-    <div class="nav-bar" id="nav-bar">
-        <div class="nav-list">
-            <ul>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
+    <header class="header-nav">
+        <div class="nav-bar" id="nav-bar">
+            <div class="nav-list">
+                <ul>
+
+<!--todo MENU -->
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="scrolled">
+                                <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                                </path>
+                            </svg>
+                            Menu
+                        </a>
+                    </li>
+
+<!--todo PESQUISAR -->
+
+                    <li class="nav-item">
+                        <a href="../HTML/catalogo.html" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="search-svg">
+                                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                                </path>
+                            </svg>
+                            Pesquisar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+<!--todo LOGO -->
+
+            <div class="nav-imagem">
+                <a href="../index.html">
+                    <img class="nav-logo" src="../IMG/menu logo new.png" alt="Logo">
+                </a>
+            </div>
+   
+<!--todo CARRINHO -->
+
+            <div class="nav-carrinho">
+                <ul>
+                    <li class="nav-carrinho-item"><a href="../HTML/carrinho.html" class="nav-carrinho-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M216,64H176a48,48,0,0,0-96,0H40A16,16,0,0,0,24,80V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V80A16,16,0,0,0,216,64ZM128,32a32,32,0,0,1,32,32H96A32,32,0,0,1,128,32Zm88,168H40V80H80V96a8,8,0,0,0,16,0V80h64V96a8,8,0,0,0,16,0V80h40Z">
+                            </path>
+                        </svg>
+                        Carrinho
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+<!--todo LOGIN BOTÃO -->
+
+            <div class="login-button">
+                <button id="login-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="login-svg">
+                                <path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path></svg>
+                            <span class="login-button1">Login</span>
+                </button>
+            </div>
+
+<!--todo BOTÃO DE FECHAR O MENU MOBILE -->
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../IMG/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </div>
+
+<!--todo MOBILE MENU -->
+
+        <div class="mobile-menu" id="mobile-menu">
+                <ul>
+
+<!--todo MENU -->
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="scrolled">
+                                <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                                </path>
+                            </svg>
+                            Menu
+                        </a>
+                    </li>
+
+<!--todo PESQUISAR -->
+
+                    <li class="nav-item">
+                        <a href="../HTML/catalogo.html" class="nav-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="search-svg">
+                                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                                </path>
+                            </svg>
+                            Pesquisar
+                        </a>
+                    </li>
+ 
+<!--todo CARRINHO -->
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="scrolled">
-                            <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                            <path d="M216,64H176a48,48,0,0,0-96,0H40A16,16,0,0,0,24,80V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V80A16,16,0,0,0,216,64ZM128,32a32,32,0,0,1,32,32H96A32,32,0,0,1,128,32Zm88,168H40V80H80V96a8,8,0,0,0,16,0V80h64V96a8,8,0,0,0,16,0V80h40Z">
                             </path>
                         </svg>
-                        Menu
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="file:///C:/Users/Admin/Documents/estudos%20html/Use%20Stylo/HTML/catalogo.html" class="nav-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="search-svg">
-                            <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
-                            </path>
-                        </svg>
-                        Pesquisar
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-imagem">
-            <a href="file:///C:/Users/Admin/Documents/estudos%20html/Use%20Stylo/index.html">
-                <img class="nav-logo" src="../IMG/menu logo new.png" alt="Logo">
-            </a>
-        </div>
-        <div class="nav-carrinho">
-            <ul>
-                <li class="nav-carrinho-item"><a href="carrinho.html" class="nav-carrinho-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
-                        <path d="M216,64H176a48,48,0,0,0-96,0H40A16,16,0,0,0,24,80V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V80A16,16,0,0,0,216,64ZM128,32a32,32,0,0,1,32,32H96A32,32,0,0,1,128,32Zm88,168H40V80H80V96a8,8,0,0,0,16,0V80h64V96a8,8,0,0,0,16,0V80h40Z">
-                        </path>
-                    </svg>
-                    Carrinho
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="login-button">
-            <button id="login-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="login-svg">
-                            <path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path></svg>
-                        <span class="login-button1">Login</span>
-            </button>
-        </div>
-        <div class="mobile-menu-icon">
-            <button onclick="menuShow()"><img class="icon" src="../IMG/menu_white_36dp.svg" alt=""></button>
-        </div>
-    </div>
-    <div class="mobile-menu" id="mobile-menu">
-            <ul>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="scrolled">
-                            <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
-                            </path>
-                        </svg>
-                        Menu
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="file:///C:/Users/Admin/Documents/estudos%20html/Use%20Stylo/HTML/catalogo.html" class="nav-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="search-svg">
-                            <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
-                            </path>
-                        </svg>
-                        Pesquisar
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="scrolled">
-                        <path d="M216,64H176a48,48,0,0,0-96,0H40A16,16,0,0,0,24,80V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V80A16,16,0,0,0,216,64ZM128,32a32,32,0,0,1,32,32H96A32,32,0,0,1,128,32Zm88,168H40V80H80V96a8,8,0,0,0,16,0V80h64V96a8,8,0,0,0,16,0V80h40Z">
-                        </path>
-                    </svg>
-                    Carrinho
-                    </a>
-                </li>
-            </ul>
-        <div class="login-button">
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="login-svg">
-                    <path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path></svg>
-                <span class="login-button1">Login</span>
-            </button>
-        </div>
-    </div>
-</header>
+                        Carrinho
+                        </a>
+                    </li>
+                </ul>
 
-<div class="corpo-categorias carrinho-compras">
-    <table>
-        <tr>
-            <th>Produto</th>
-            <th>Quantidade</th>
-            <th>Valor</th>
-        </tr>
-        <tr>
-            <td>
-                <div class="info-carrinho">
-                    <img src="../IMG/carrinho/carrinho-1.jpg" alt="">
+<!--todo LOGIN BOTÃO -->
 
-                    <div>
-                        <p>Curso Loja Virtual</p>
-                        <small>Valor: R$ 110,00</small>
-                        <a href="" title="">Remover</a>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <form action="" method="post">
-                    <input type="number" name="" id="" value="1">
-                </form>
-            </td>
-            <td>R$ 110,00</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="info-carrinho">
-                    <img src="../IMG/carrinho/carrinho-2.jpg" alt="">
+            <div class="login-button">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256" class="login-svg">
+                        <path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path></svg>
+                    <span class="login-button1">Login</span>
+                </button>
+            </div>
+        </div>
+    </header>
+<!--Menu da Página-->
 
-                    <div>
-                        <p>Curso Loja Virtual</p>
-                        <small>Valor: R$ 110,00</small>
-                        <a href="" title="">Remover</a>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <form action="" method="post">
-                    <input type="number" name="" id="" value="1">
-                </form>
-            </td>
-            <td>R$ 110,00</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="info-carrinho">
-                    <img src="../IMG/carrinho/carrinho-3.jpg" alt="">
-
-                    <div>
-                        <p>Curso Loja Virtual</p>
-                        <small>Valor: R$ 110,00</small>
-                        <a href="" title="">Remover</a>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <form action="" method="post">
-                    <input type="number" name="" id="" value="1">
-                </form>
-            </td>
-            <td>R$ 110,00</td>
-        </tr>
-    </table>
-
-    <div class="valor-total">
+<!-- Carrinho -->
+    <div class="corpo-categorias carrinho-compras">
         <table>
             <tr>
-                <td>Sub-Total</td>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="info-carrinho">
+                        <img src="../IMG/carrinho/carrinho-1.jpg" alt="">
+
+                        <div>
+                            <p>Curso Loja Virtual</p>
+                            <small>Valor: R$ 110,00</small>
+                            <a href="" title="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <form action="" method="post">
+                        <input type="number" name="" id="" value="1">
+                    </form>
+                </td>
                 <td>R$ 110,00</td>
             </tr>
-
             <tr>
-                <td>Frete</td>
-                <td>R$ 30,00</td>
+                <td>
+                    <div class="info-carrinho">
+                        <img src="../IMG/carrinho/carrinho-2.jpg" alt="">
+
+                        <div>
+                            <p>Curso Loja Virtual</p>
+                            <small>Valor: R$ 110,00</small>
+                            <a href="" title="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <form action="" method="post">
+                        <input type="number" name="" id="" value="1">
+                    </form>
+                </td>
+                <td>R$ 110,00</td>
             </tr>
-
             <tr>
-                <td>Total</td>
-                <td>R$ 140,00</td>
+                <td>
+                    <div class="info-carrinho">
+                        <img src="../IMG/carrinho/carrinho-3.jpg" alt="">
+
+                        <div>
+                            <p>Curso Loja Virtual</p>
+                            <small>Valor: R$ 110,00</small>
+                            <a href="" title="">Remover</a>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <form action="" method="post">
+                        <input type="number" name="" id="" value="1">
+                    </form>
+                </td>
+                <td>R$ 110,00</td>
             </tr>
         </table>
+
+        <div class="valor-total">
+            <table>
+                <tr>
+                    <td>Sub-Total</td>
+                    <td>R$ 110,00</td>
+                </tr>
+
+                <tr>
+                    <td>Frete</td>
+                    <td>R$ 30,00</td>
+                </tr>
+
+                <tr>
+                    <td>Total</td>
+                    <td>R$ 140,00</td>
+                </tr>
+            </table>
+        </div>
+
+
     </div>
-
-
-</div>
+<!-- Carrinho -->
 
 <!--Botão de Contato Flutuante-->
-<h3>
-    <a class="bottomwhatsapp" title="Tire suas Dúvidas" target="_blank" rel="nofollow noopener noreferrer" href="https://api.whatsapp.com/message/MNGD3KTQR7XGH1?autoload=1&app_absent=0">
-        <span class="bottomwhatsappmsg">Dúvidas?</span>
-            <img class="bottomwhatsapplogo" src="../IMG/whatsapp bottom.png" alt="">
-    </a>
-</h3>
+    <h3>
+        <a class="bottomwhatsapp" title="Tire suas Dúvidas" target="_blank" rel="nofollow noopener noreferrer" href="https://api.whatsapp.com/message/MNGD3KTQR7XGH1?autoload=1&app_absent=0">
+            <span class="bottomwhatsappmsg">Dúvidas?</span>
+                <img class="bottomwhatsapplogo" src="../IMG/whatsapp bottom.png" alt="">
+        </a>
+    </h3>
+<!--Botão de Contato Flutuante-->
 
-<!--Separador-->
-<hr>
+<!--! Separador -->
+    <hr>
+    <br>
+<!--! Separador -->
+
+<!-- Informações Gerais -->
+    <main>
+        <div class="footer-infos">
+        
+    <!-- Atendimento -->
+                <div class="fico-atendimento">
+                    <div class="fico-atendimento1" title="Horário de atendimento" aria-label="Horário de atendimento">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 256 256" class="lazyload-svg replaced-svg text-cor-base">
+                            <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"></path>
+                        </svg>
+                    </div>
+                    <div class="ftxt-atendimento">
+                        <span class="ftxt-atendimento1">Atendimento</span>
+                        <span class="ftxt-atendimento2">Seg à sex das 8h-11:30h e das 13h-17:30h</span>
+                    </div>
+                </div>
+        
+    <!-- Trocas e Devoluções -->
+                <div class="fico-trocas">
+                    <div class="fico-trocas1" title="Trocas e devoluções" aria-label="Trocas e devoluções">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 256 256" class="lazyload-svg replaced-svg text-cor-base">
+                            <path d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32l80.34,44-29.77,16.3-80.35-44ZM128,120,47.66,76l33.9-18.56,80.34,44ZM40,90l80,43.78v85.79L40,175.82Zm176,85.78h0l-80,43.79V133.82l32-17.51V152a8,8,0,0,0,16,0V107.55L216,90v85.77Z"></path>
+                        </svg>
+                    </div>
+                    <div class="ftxt-trocas">
+                        <span class="ftxt-trocas1">Trocas e devoluções</span>
+                        <span class="ftxt-trocas2">Até 7 dias para trocas ou devoluções</span>
+                    </div>
+                </div>
+        
+    <!-- Frete -->
+                <div class="fico-frete">
+                    <div class="fico-frete1" title="Frete" aria-label="Frete">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 256 256" class="lazyload-svg replaced-svg text-cor-base">
+                            <path d="M255.42,117l-14-35A15.93,15.93,0,0,0,226.58,72H192V64a8,8,0,0,0-8-8H32A16,16,0,0,0,16,72V184a16,16,0,0,0,16,16H49a32,32,0,0,0,62,0h50a32,32,0,0,0,62,0h17a16,16,0,0,0,16-16V120A7.94,7.94,0,0,0,255.42,117ZM192,88h34.58l9.6,24H192ZM32,72H176v64H32ZM80,208a16,16,0,1,1,16-16A16,16,0,0,1,80,208Zm81-24H111a32,32,0,0,0-62,0H32V152H176v12.31A32.11,32.11,0,0,0,161,184Zm31,24a16,16,0,1,1,16-16A16,16,0,0,1,192,208Zm48-24H223a32.06,32.06,0,0,0-31-24V128h48Z"></path>
+                        </svg>
+                    </div>
+                    <div class="ftxt-frete">
+                        <span class="ftxt-frete1">Frete</span>
+                        <span class="ftxt-frete2">Grátis para compras acima de R$299 para todo o Brasil</span>
+                    </div>
+                </div>
+        
+    <!-- Parcelamento -->
+                <div class="fico-parcelamento">
+                    <div class="fico-parcelamento1" title="Parcelamento" aria-label="Parcelamento">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 256 256" class="lazyload-svg replaced-svg text-cor-base">
+                            <path d="M224,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48Zm0,16V88H32V64Zm0,128H32V104H224v88Zm-16-24a8,8,0,0,1-8,8H168a8,8,0,0,1,0-16h32A8,8,0,0,1,208,168Zm-64,0a8,8,0,0,1-8,8H120a8,8,0,0,1,0-16h16A8,8,0,0,1,144,168Z"></path>
+                        </svg>
+                    </div>
+                    <div class="ftxt-parcelamento">
+                        <span class="ftxt-parcelamento1">Parcelamento</span>
+                        <span class="ftxt-parcelamento2">Em até 6x sem juros no cartão</span>
+                    </div>
+                </div>
+
+        </div>
+    </main>
+<!-- Informações Gerais -->
+
+<!--! Separador -->
+    <br>
+    <hr>
+    <br>
+<!--! Separador -->
 
 <!-- Footer -->
- <br>
-<main>
-    <div class="footer-infos">
-    
-<!-- Atendimento -->
-            <div class="fico-atendimento">
-                <div class="fico-atendimento1" title="Horário de atendimento" aria-label="Horário de atendimento">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 256 256" class="lazyload-svg replaced-svg text-cor-base">
-                        <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"></path>
-                    </svg>
-                </div>
-                <div class="ftxt-atendimento">
-                    <span class="ftxt-atendimento1">Atendimento</span>
-                    <span class="ftxt-atendimento2">Seg à sex das 8h-11:30h e das 13h-17:30h</span>
-                </div>
-            </div>
-    
-<!-- Trocas e Devoluções -->
-            <div class="fico-trocas">
-                <div class="fico-trocas1" title="Trocas e devoluções" aria-label="Trocas e devoluções">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 256 256" class="lazyload-svg replaced-svg text-cor-base">
-                        <path d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32l80.34,44-29.77,16.3-80.35-44ZM128,120,47.66,76l33.9-18.56,80.34,44ZM40,90l80,43.78v85.79L40,175.82Zm176,85.78h0l-80,43.79V133.82l32-17.51V152a8,8,0,0,0,16,0V107.55L216,90v85.77Z"></path>
-                    </svg>
-                </div>
-                <div class="ftxt-trocas">
-                    <span class="ftxt-trocas1">Trocas e devoluções</span>
-                    <span class="ftxt-trocas2">Até 7 dias para trocas ou devoluções</span>
-                </div>
-            </div>
-    
-<!-- Frete -->
-            <div class="fico-frete">
-                <div class="fico-frete1" title="Frete" aria-label="Frete">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 256 256" class="lazyload-svg replaced-svg text-cor-base">
-                        <path d="M255.42,117l-14-35A15.93,15.93,0,0,0,226.58,72H192V64a8,8,0,0,0-8-8H32A16,16,0,0,0,16,72V184a16,16,0,0,0,16,16H49a32,32,0,0,0,62,0h50a32,32,0,0,0,62,0h17a16,16,0,0,0,16-16V120A7.94,7.94,0,0,0,255.42,117ZM192,88h34.58l9.6,24H192ZM32,72H176v64H32ZM80,208a16,16,0,1,1,16-16A16,16,0,0,1,80,208Zm81-24H111a32,32,0,0,0-62,0H32V152H176v12.31A32.11,32.11,0,0,0,161,184Zm31,24a16,16,0,1,1,16-16A16,16,0,0,1,192,208Zm48-24H223a32.06,32.06,0,0,0-31-24V128h48Z"></path>
-                    </svg>
-                </div>
-                <div class="ftxt-frete">
-                    <span class="ftxt-frete1">Frete</span>
-                    <span class="ftxt-frete2">Grátis para compras acima de R$299 para todo o Brasil</span>
-                </div>
-            </div>
-    
-<!-- Parcelamento -->
-            <div class="fico-parcelamento">
-                <div class="fico-parcelamento1" title="Parcelamento" aria-label="Parcelamento">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 256 256" class="lazyload-svg replaced-svg text-cor-base">
-                        <path d="M224,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48Zm0,16V88H32V64Zm0,128H32V104H224v88Zm-16-24a8,8,0,0,1-8,8H168a8,8,0,0,1,0-16h32A8,8,0,0,1,208,168Zm-64,0a8,8,0,0,1-8,8H120a8,8,0,0,1,0-16h16A8,8,0,0,1,144,168Z"></path>
-                    </svg>
-                </div>
-                <div class="ftxt-parcelamento">
-                    <span class="ftxt-parcelamento1">Parcelamento</span>
-                    <span class="ftxt-parcelamento2">Em até 6x sem juros no cartão</span>
-                </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sobre nós</h3>
+                <p>Importadora de roupas de marcas renomadas, trazendo o melhor da moda internacional com qualidade e exclusividade. Nosso objetivo é oferecer estilo e sofisticação para o seu guarda-roupa. Use o seu Stylo!</p>
             </div>
 
-    </div>
-</main>
+            <div class="footer-section">
+                <h3>Classificados</h3>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
 
-<footer>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                <p><strong>Endereço:</strong> Rua 7 de setembro 478, centro!, São Pedro Do Sul, Rio Grande Do Sul, Brazil 97400000</p>
+            </div>
 
-    <br><br><br>
-    <div class="footer-container">
-        <div class="footer-section">
-            <h3>Sobre nós</h3>
-            <p>Importadora de roupas de marcas renomadas, trazendo o melhor da moda internacional com qualidade e exclusividade. Nosso objetivo é oferecer estilo e sofisticação para o seu guarda-roupa. Use o seu Stylo!</p>
+            <div class="footer-section social-media">
+                <h3>Redes Sociais</h3>
+                <a href="#" target="_blank"><img src="../IMG/whatsapp logo.png" alt="Whatsapp"></a>
+                <a href="#" target="_blank"><img src="../IMG/instagram logo.png" alt="Instagram"></a>
+            </div>
         </div>
 
-        <div class="footer-section">
-            <h3>Classificados</h3>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+        <div class="footer-bottom">
+            <p>Use Styloo - Moda Masculina CNPJ: 00.000.000/0000-00 | &copy; Direitos Reservados www.usestylo.com </p>
+            <div class="webdev"><img class="webdev-png" src="../IMG/webdev.png" alt=""></div>
         </div>
-
-        <div class="footer-section">
-            <h3>Contato</h3>
-            <p><strong>Telefone:</strong> (11) 1234-5678</p>
-            <p><strong>Endereço:</strong> Rua 7 de setembro 478, centro!, São Pedro Do Sul, Rio Grande Do Sul, Brazil 97400000</p>
-        </div>
-
-        <div class="footer-section social-media">
-            <h3>Redes Sociais</h3>
-            <a href="#" target="_blank"><img src="../IMG/whatsapp logo.png" alt="Whatsapp"></a>
-            <a href="#" target="_blank"><img src="../IMG/instagram logo.png" alt="Instagram"></a>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <p>Use Styloo - Moda Masculina CNPJ: 00.000.000/0000-00 | &copy; Direitos Reservados www.usestylo.com </p>
-    </div>
-</footer>
-
-<!--Separador-->
-<hr>
-<br>
-<!-- Powered By -->
-<span>powered by</span>
+    </footer>
+<!-- Footer -->
 
 <!-- Barra de aceitação de cookies -->
-<main>
-    <div id="cookieBanner" class="cookie-banner">
-        <p>Usamos cookies para melhorar a sua experiência. Ao continuar navegando, você aceita nossa <a class="cookiePolitica" href="#">política de cookies</a>.</p>
-        <button onclick="aceitarCookies()">Eu aceito.</button>
-    </div>
-</main>
+    <main>
+        <div id="cookieBanner" class="cookie-banner">
+            <p>Usamos cookies para melhorar a sua experiência. Ao continuar navegando, você aceita nossa <a class="cookiePolitica" href="#">política de cookies</a>.</p>
+            <button onclick="aceitarCookies()">Eu aceito.</button>
+        </div>
+    </main>
+<!-- Barra de aceitação de cookies -->
 
 <!-- Fim -->
  
