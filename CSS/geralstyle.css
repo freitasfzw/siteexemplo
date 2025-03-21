@@ -3,7 +3,7 @@
     :root {
         --bg-color: #000000;
         --text-color: #FFF;
-        --main-color: #ff0000;
+        --main-color: #15ff00;
         --star-color: #ffbb00;
         --text-color2: #505050;
     }
@@ -76,6 +76,7 @@ Estilos para a Informação de Copy
         margin: 5px;
         font-weight: bold;
         text-align: center;
+
     }
 
 /* -------------------------------------------
@@ -88,6 +89,8 @@ Estilos para os Botões Sociais
         height: 40px;
         margin-top: auto;
         margin-bottom: auto;
+
+
     }
 
     .sociais-icologo1 {
@@ -119,6 +122,7 @@ Estilos para a Barra de Cookies
         visibility: hidden;  /* Inicialmente oculto */
         transition: opacity 0.9s ease, visibility 0s linear 0.9s;  /* Animação de fade-in e fade-out */
         z-index: 1000;
+
     }
 
     .cookie-banner button {
@@ -146,7 +150,6 @@ Estilo Geral do Footer
 footer {
     background-color: var(--text-color);
     color: var(--bg-color);
-    padding: 50px 0;
     font-family: Arial, sans-serif;
 }
 
@@ -198,6 +201,7 @@ footer {
 /* Seção de redes sociais */
 .footer-section.social-media {
     text-align: center;
+    
 }
 
 .footer-section.social-media a {
@@ -215,6 +219,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+    
 }
 
 .footer-bottom p {
@@ -226,6 +231,7 @@ footer {
     .footer-container {
         flex-direction: column;
         align-items: center;
+        
     }
 
     .footer-section {
@@ -239,6 +245,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
     .webdev-png {
 
@@ -246,3 +253,61 @@ footer {
         width: 17%;
 
     }
+
+
+/*! --------------------------------------------------------------------------------------- */
+/*! Estilos para o Rodapé (Informações sobre Troca, Frete, Informações e Parcelamento)      */
+/*! --------------------------------------------------------------------------------------- */
+
+.footer-infos {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+    margin: 0px 7px;
+
+}
+.fico-atendimento,
+.fico-trocas,
+.fico-frete,
+.fico-parcelamento {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+    gap: 10px; /* Espaçamento entre os itens (ícone e texto) */
+
+}
+
+.fico-atendimento1,
+.fico-trocas1,
+.fico-frete1,
+.fico-parcelamento1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ftxt-atendimento,
+.ftxt-trocas,
+.ftxt-frete,
+.ftxt-parcelamento {
+    display: flex;
+    flex-direction: column; /* Coloca o texto em coluna */
+    justify-content: center;
+
+}
+
+.ftxt-atendimento1,
+.ftxt-trocas1,
+.ftxt-frete1,
+.ftxt-parcelamento1 {
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ftxt-atendimento2,
+.ftxt-trocas2,
+.ftxt-frete2,
+.ftxt-parcelamento2 {
+    font-size: 0.9rem;
+    color: #666; /* Cor mais clara para a descrição */
+}

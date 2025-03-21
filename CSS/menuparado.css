@@ -13,7 +13,7 @@ Estilos para o Menu
 :root {
     --bg-color: #000000;
     --text-color: #FFF;
-    --main-color: #ff0000;
+    --main-color: #15ff00;
     --star-color: #ffbb00;
     --text-color2: #505050;
 }
@@ -26,10 +26,15 @@ Estilos para o Menu
     z-index: 1000;
     background-color: #000000;
 }
+.header-nav:hover {
+    background-color: var(--bg-color);
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 .nav-bar {
     display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 6rem;
+    justify-content: center;
+    padding: 0.5rem 3rem;
     transition: all .5s ease;
 
 }
@@ -38,32 +43,54 @@ Estilos para o Menu
     display: flex;
     align-items: center;
     justify-content: right;
-    width: 15%;
 
 }
+
 .nav-logo {
-    display: inline-block;
-    width: 90%;
-    height: auto;
-
+    display: flex;
+    width: 15rem;
+    align-items: center;
+      
 }
-.nav-list,.nav-carrinho {
+.nav-logo:hover {
+    transition: all .5s ease;
+    filter: invert(21%) sepia(92%) saturate(1000%) hue-rotate(50deg) brightness(120%) contrast(150%);
+}
+.nav-list {
     display: flex;
     border: none;
     padding: 10px 15px;
 }
-.nav-list ul,.nav-carrinho ul {
+
+.nav-carrinho {
+    display: flex;
+    border: none;
+    padding: 10px 20px;
+
+}
+.nav-list ul {
     display: flex;
     justify-content: center;
     list-style: none;
 
 }
-.nav-item,.nav-carrinho-item {
-    margin: 0 12px;
-    transition: all .50s ease;
-
+.nav-carrinho ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
 }
-.nav-item a:hover,.nav-carrinho a:hover {
+.nav-item {
+    display: flex;
+    border: none;
+    padding: 10px 0px;
+}
+.nav-carrinho-item {
+    margin: 5px 25px;
+}
+.nav-item a {
+    margin: 5px 15px;
+}
+.nav-item a:hover {
     display: flex;
     border: none;
     border-radius: 20px;
@@ -71,20 +98,44 @@ Estilos para o Menu
     color: var(--main-color);
 
 }
-.nav-link,.nav-carrinho-item {
+.nav-carrinho a:hover {
+    display: flex;
+    border: none;
+    border-radius: 20px;
+    transition: all .50s ease;
+    color: var(--main-color);
+
+}
+.nav-link {
     color: var(--text-color);
     display: flex;
+    margin: 0 auto;
+    padding: 5px;
+    gap: 5px;
     text-decoration: none;
     text-align: center;
     font-weight: 500;
     font-size: 1.0rem;
     transition: all .50s ease;
-    gap: 5px;
 
 }
+.nav-carrinho-item {
+    color: var(--text-color);
+    display: flex;
+    margin: 0 auto;
+    padding: 5px;
+    gap: 5px;
+    text-decoration: none;
+    text-align: right;
+    font-weight: 500;
+    font-size: 1.0rem;
+    transition: all .50s ease;
+}
+
 .login-button button {
     display: flex;
     border: none;
+    margin: 10px 0;
     padding: 10px 15px;
     border-radius: 5px;
     transition: all .50s ease;
@@ -124,13 +175,21 @@ Estilos para o Menu
         transition: .2s;
 
     }
+    .header-nav:hover {
+        background-color: var(--bg-color);
+    }
+    .nav-bar:hover {
+        background-color: var(--bg-color);
+    }
     .nav-bar {
-        padding: 1.5rem 4rem;
+        padding: 0.5rem 3rem;
         transition: all .50s ease;
+
     }
     .nav-item {
         display: none;
         transition: all .50s ease;
+
     }
     .nav-item a {
         transition: all .50s ease;
@@ -146,15 +205,25 @@ Estilos para o Menu
     }
 
     .nav-logo {
-        width: 200%;
+        width: 100%;
+
+    }
+    .nav-logo:hover {
+        transition: all .5s ease;
+        filter: invert(21%) sepia(92%) saturate(1000%) hue-rotate(50deg) brightness(120%) contrast(150%);
     }
     .mobile-menu-icon {
-        display: block;
+        display: flex;
+
     }
     .mobile-menu-icon button {
         background-color: transparent;
         border: none;
-       cursor: pointer; 
+        cursor: pointer;
+    }
+    .mobile-menu-icon button:hover {
+        transition: all .5s ease;
+        filter: invert(21%) sepia(92%) saturate(1000%) hue-rotate(50deg) brightness(120%) contrast(150%);
     }
     .mobile-menu ul {
         display: flex;
@@ -162,6 +231,7 @@ Estilos para o Menu
         text-align: center;
         padding-bottom: 1rem;
     }
+
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;

@@ -3,7 +3,7 @@
     :root {
         --bg-color: #000000;
         --text-color: #FFF;
-        --main-color: #ff0000;
+        --main-color: #15ff00;
         --star-color: #ffbb00;
         --text-color2: #505050;
     }
@@ -139,63 +139,6 @@
         transform: scaleY(1);
     }
 
-/*! --------------------------------------------------------------------------------------- */
-/*! Estilos para o Rodapé (Informações sobre Troca, Frete, Informações e Parcelamento)      */
-/*! --------------------------------------------------------------------------------------- */
-
-    .footer-infos {
-        display: inline-flex;
-        justify-content: space-evenly;
-        width: 100%;
-        font-size: 16px;
-        margin: 0px 7px;
-
-    }
-    .fico-atendimento,
-    .fico-trocas,
-    .fico-frete,
-    .fico-parcelamento {
-        display: flex;
-        align-items: center; /* Alinha os itens verticalmente no centro */
-        justify-content: center; /* Alinha os itens horizontalmente no centro */
-        gap: 10px; /* Espaçamento entre os itens (ícone e texto) */
-
-    }
-
-    .fico-atendimento1,
-    .fico-trocas1,
-    .fico-frete1,
-    .fico-parcelamento1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .ftxt-atendimento,
-    .ftxt-trocas,
-    .ftxt-frete,
-    .ftxt-parcelamento {
-        display: flex;
-        flex-direction: column; /* Coloca o texto em coluna */
-        justify-content: center;
-
-    }
-
-    .ftxt-atendimento1,
-    .ftxt-trocas1,
-    .ftxt-frete1,
-    .ftxt-parcelamento1 {
-        font-weight: 600;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .ftxt-atendimento2,
-    .ftxt-trocas2,
-    .ftxt-frete2,
-    .ftxt-parcelamento2 {
-        font-size: 0.9rem;
-        color: #666; /* Cor mais clara para a descrição */
-    }
 
 /*! --------------------------------------------------------------------------------------- */
 /*! Estilos para as informações da Loja Física (Informações localização, fotos e telefone)  */
@@ -315,10 +258,13 @@
         display: flex;  /* Utiliza Flexbox para o layout */
         flex-wrap: nowrap;  /* Não permite que os itens quebrem para a linha seguinte */
         justify-content: space-evenly;  /* Distribui os itens com espaçamento igual entre eles */
+        background-color: var(--bg-color);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);  /* Aplica uma sombra ao redor do produto */
+
     }
     .produto a {
         text-decoration: none;
-        color: var(--bg-color);
+        color: var(--text-color);
     }
     /*? SEGUNDA DIV GERAL */
     .produto { 
@@ -326,7 +272,7 @@
         width: 200px;  /* Largura fixa para cada produto */
         text-align: center;  /* Centraliza o texto dentro de cada item */
         display: block;  /* Faz cada produto se comportar como um bloco */
-        border: 1px solid var(--text-color);  /* Define uma borda com cor variável */
+        border: 1px solid var(--bg-color);  /* Define uma borda com cor variável */
         border-radius: 5px;  /* Bordas arredondadas */
         padding: 10px;  /*w Preenche o conteúdo com 10px de espaçamento */
         transition: box-shadow 1s ease;  /* Transição suave para a sombra */
@@ -336,7 +282,7 @@
     .produto:hover { 
         transition: box-shadow 1s ease;  /* Transição suave para a sombra */
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);  /* Aplica uma sombra ao redor do produto */
-        color: var(--bg-color);  /* Altera a cor do texto ao passar o mouse */
+        color: var(--main-color);  /* Altera a cor do texto ao passar o mouse */
     }
 
     /*? IMAGEM DO PRODUTO */
@@ -361,7 +307,7 @@
         font-family: "Overlock", serif;  /* Família de fontes serifada */
         font-weight: 600;  /* Largura da fonte */
         font-style: normal;  /* Estilo normal para a fonte */
-        color: var(--text-color2);  /* Cor do texto */
+        color: var(--main-color);  /* Cor do texto */
     }
 
     /*? 6X NO CARTÃO */
@@ -382,7 +328,8 @@
     /*? PREÇO DO PRODUTO */
     .produto .p-preço {
         font-weight: bold;  /* Deixa o preço em negrito */
-        color: var(--bg-color);  /* Cor do preço */
+        font-size: 20px;
+        color: var(--text-color);  /* Cor do preço */
         margin: 0;  /* Remove margens */
         padding: 0;  /* Remove padding */
     }
@@ -397,7 +344,7 @@
         border-radius: 5px;
         border: 3px solid var(--bg-color);
         background-color: var(--bg-color);
-        color: var(--text-color);
+        color: var(--main-color);
     }
 
     /*? HOVER IMAGEM DO PRODUTO */
@@ -408,7 +355,7 @@
 
     .p-offer {
         border: 3px solid var(--bg-color);
-        background-color: var(--bg-color);
+        background-color: var(--text-color2);
         color: var(--text-color);
         border-radius: 5px;
         
@@ -416,19 +363,25 @@
     .p-sale {
         font-weight: 300;
         font-size: 12px;
+        color: var(--main-color);
     }
 
+    .vermais {
+        background-color: var(--bg-color);
+    }
     .abutton-vermais {
         text-decoration: none;
         list-style: none;
+
+        
     }
     
     .button-vermais {
         display: flex;
         margin: auto;
-        background-color: var(--bg-color);
+        background-color: var(--text-color);
         font-size: 18px;
-        color: var(--text-color);
+        color: var(--bg-color);
         padding: 10px 15px;
         border-radius: 5px;
         transition: all .50s ease;
@@ -446,6 +399,36 @@
         justify-content: center;
     }
 
+
+/*! ----------------------------------- */ 
+/*! Estilos para o DIV De lançamentos   */
+/*! ----------------------------------- */ 
+
+    .b-streetweardiv {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);  /* Aplica uma sombra ao redor do produto */
+    }
+
+    .b-streetwear {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .b-streetwear img {
+        width: 100%;
+        display: block;
+        
+    }
+
+    @media (max-width: 768px) {
+        .b-streetweardiv {
+            max-width: 100%;
+        }
+    }
+
 /*! ------------------------------------------- */
 /*! Estilos para as Duvidas                     */
 /*! ------------------------------------------- */ 
@@ -457,7 +440,9 @@
 }
 
 .faq-container h1 {
-    scale: 70%;
+    font-weight: lighter;  /* Deixa o peso da fonte mais leve */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Define a família de fontes */
+    text-align: center;
 }
 
 .faq-item {

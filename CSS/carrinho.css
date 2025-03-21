@@ -1,34 +1,9 @@
 :root {
     --bg-color: #000000;
     --text-color: #FFF;
-    --main-color: #ff0000;
+    --main-color: #15ff00;
     --star-color: #ffbb00;
     --text-color2: #505050;
-}
-
-
-/* -------------------------------------------
-   Estilos para o Rodapé (Informações sobre Troca, Frete, Informações e Parcelamento)
-   ------------------------------------------- */
-
-   .footer-infos {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-}
-
-.ftxt-atendimento1, .ftxt-trocas1, .ftxt-frete1, .ftxt-parcelamento1 {
-    display: flex;
-    text-align: center;
-    font-weight: bold;
-}
-
-.fico-atendimento2,.ftxt-trocas2,.ftxt-frete2,.ftxt-parcelamento2 {
-    display: flex;
-    text-align: center;
-    font-weight: italic;
 }
 
 /* -------------------------------------------
